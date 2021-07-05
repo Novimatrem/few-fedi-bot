@@ -57,7 +57,7 @@ xdotool keyup n
 sleep 1s
 xdotool getactivewindow key ctrl+v
 sleep 1s
-
+xdotool key Return
 
 
 sleep 3600s
