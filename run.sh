@@ -57,6 +57,9 @@ xdotool keyup n
 sleep 1s
 xdotool getactivewindow key ctrl+v
 sleep 1s
+xdotool keyup Ctrl
+xdotool keyup Return
+sleep 1s
 xdotool key Ctrl+Return
 
 
