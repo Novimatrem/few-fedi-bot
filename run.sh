@@ -1,5 +1,10 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
+
+echo "waiting for server to boot"
+sleep 15s
+
 # you need to specifically have firefox open, and switched to
 # the mastodon homepage/dashboard/main thing, in a position ready to toot.
 # it should be the only tab, and you should be switched to it
@@ -67,4 +72,3 @@ sleep 3600s
 # 1 hour in seconds
 
 bash run.sh
-
