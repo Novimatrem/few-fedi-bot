@@ -105,6 +105,11 @@ sleep 1s
 # NOW WE MANUALLY CLICK THE PUBLIC BUTTON WITH X,Y COORDS BECAUSE FUCK A11Y IG
 # WHY DID THEY DO THIS
 sleep 1s
+
+# ensure the zoom is actually correct so the buttom is in the right coord
+xdotool key Ctrl+0
+
+sleep 1s
 xdotool mousemove 500 440
 
 sleep 1s
