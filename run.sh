@@ -2,12 +2,20 @@
 
 cd "$(dirname "$0")"
 clear
-echo "waiting for server to boot"
-echo "don't touch anything"
+echo "Waiting for server to boot"
+echo ""
+echo "CLICK ON THE TEXT ENTRY BOX NOW!"
+echo "(What's on your mind?)"
+echo ""
+echo "Usage: firefox must be open to https://diasporasocial.net/status_messages/new"
+echo "and that diaspora window must be the FIRST TAB (accessible with Ctrl+1),"
+echo "and you should click on the text box (What's on your mind?),"
+echo "then it will work forever if you just leave it alone."
+echo ""
+
 #echo "CLICK ON THE TEXT ENTRY BOX NOW!"
 sleep 15s
 
-# you need to specifically have firefox open, and switched to
 
 # it should be the only tab, and you should be switched to it
 
@@ -45,7 +53,9 @@ echo ""
 sleep 2s
 sleep 1s
 wmctrl -a "Mozilla Firefox"
+wmctrl -R "Mozilla Firefox"
 sleep 1s
+xdotool key Ctrl+1
 #xdotool getactivewindow key Tab
 sleep 1s
 #xdotool key 1
@@ -64,7 +74,7 @@ sleep 0.2s
 xdotool keyup n
 sleep 1s
 xdotool key Tab
-echo "we in box now"
+#echo "we in box now"
 sleep 1s
 xdotool getactivewindow key ctrl+a
 sleep 1s
@@ -121,10 +131,10 @@ xdotool key Shift+Tab
 sleep 1s
 xdotool key Shift+Tab
 
-echo "send key"
+#echo "send key"
 xdotool key Return # send key
 echo ""
-echo "WE JUST POSTED, NOW WE MUST RETURN TO THE POSTING PAGE."
+#echo "WE JUST POSTED, NOW WE MUST RETURN TO THE POSTING PAGE."
 echo ""
 sleep 1s
 xdotool key Tab
@@ -137,9 +147,13 @@ xdotool key Tab
 sleep 1s
 xdotool key Return
 sleep 1s
-
 echo ""
-echo "reached end of loop, waiting 1 hour"
+echo "Usage: firefox must be open to https://diasporasocial.net/status_messages/new"
+echo "and that diaspora window must be the FIRST TAB (accessible with Ctrl+1),"
+echo "and you should click on the text box (What's on your mind?),"
+echo "then it will work forever if you just leave it alone."
+echo ""
+echo "Waiting 1 hour before posting again..."
 echo ""
 
 # sleep 1 min for testing
