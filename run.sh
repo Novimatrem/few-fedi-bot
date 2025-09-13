@@ -153,7 +153,7 @@ echo "and that diaspora window must be the FIRST TAB (accessible with Ctrl+1),"
 echo "and you should click on the text box (What's on your mind?),"
 echo "then it will work forever if you just leave it alone."
 echo ""
-echo "Waiting 1 hour before posting again..."
+echo "Waiting 4 hours before posting again..."
 echo ""
 
 # sleep 1 min for testing
@@ -170,4 +170,5 @@ sleep 3600s
 
 
 bash run.sh
+
 
